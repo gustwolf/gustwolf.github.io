@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <title>Layout table</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+<!--
+Макет двухколоночный с единым контейнером, простой
+Ширина задается пикселями - 968
+В контейнере: шапка, меню, основная часть( content + sidebar ), подвал
+Меню состоит из 5 ячеек
+-->
+
+<!-- Begin: Main container table -->
+<table cellspacing="0" cellpadding="0" width="968px" align="center">
+    <tbody>
+        <!-- Header -->
+        <tr>
+            <td bgcolor="black" align="center" height="160px" colspan="5" width="968px">
+                <font color="#fff" size="5">Шапка</font>
+            </td>
+        </tr>
+        <!-- /Header -->
+        
+        <!-- Menu -->
+        <tr>
+            <td width="192px" align="center" height="50px">Меню1</td>
+            <td width="192px" bgcolor="#ff80ff" align="center" height="50px">Меню2</td>
+            <td width="192px" align="center" height="50px">Меню3</td>
+            <td width="192px" bgcolor="#ff80ff" align="center" height="50px">Меню4</td>
+            <td width="192px" align="center" height="50px">Меню5</td> 
+        </tr>
+        <!-- /Menu -->
+        
+        <!-- Main -->
+        <tr>            
+            <!-- Content -->
+            <td align="center" colspan="3" bgcolor="#cfcaea" height="450px">
+                <font color="#000" size="5">Контент</font>
+            </td>
+            <!-- /Content -->
+            
+            <!-- Sidebar -->
+            <td align="center" colspan="2" bgcolor="#123456" height="450px">
+                <font color="#000" size="5">Сайдбар</font>
+            </td>
+            <!-- /Sidebar -->
+        </tr>
+        <!-- /Main -->
+        
+        <!-- Footer -->
+        <tr>
+            <td bgcolor="#a678aa" align="center" height="100px" colspan="5" width="968px">
+                <font color="#fff" size="5">Подвал</font>
+            </td>
+        </tr>
+        <!-- /Footer -->
+    </tbody>
+</table>
+<!-- End: Main container table -->
+</body>
+</html>

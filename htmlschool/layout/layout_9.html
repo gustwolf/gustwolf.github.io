@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <title>Layout table</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+<!--
+Макет двухколоночный с единым контейнером, простой
+Ширина задается пикселями - 968
+В контейнере: шапка, меню, основная часть( content + sidebar ), подвал
+Меню состоит из 5 ячеек
+-->
+
+<!-- Begin: Main container table -->
+<table cellspacing="0" cellpadding="0" width="960px" align="center">
+    <tbody>
+        <!-- Header -->
+        <tr>
+            <td bgcolor="black" align="center" height="160px" colspan="5" width="960px">
+                <!-- Logo image -->
+                <img src="slide2.jpg" width="960px" height="360px" title="Шапка" />
+                <!-- /Logo image -->
+            </td>
+        </tr>
+        <!-- /Header -->
+        
+        <!-- Menu -->
+        <tr>
+            <td width="192px" align="center" height="50px" background="block_title.jpg">Меню1</td>
+            <td width="192px" bgcolor="#ff80ff" align="center" height="50px" background="block_title.jpg">Меню2</td>
+            <td width="192px" align="center" height="50px" background="block_title.jpg">Меню3</td>
+            <td width="192px" bgcolor="#ff80ff" align="center" height="50px" background="block_title.jpg">Меню4</td>
+            <td width="192px" align="center" height="50px" background="block_title.jpg">Меню5</td> 
+        </tr>
+        <!-- /Menu -->
+        
+        <!-- Main -->
+        <tr>            
+            <!-- Content -->
+            <td align="center" colspan="3" bgcolor="#cfcaea" height="450px">
+                <!-- News section-->
+                <table cellspacing="0" cellpadding="0" width="572px" align="center">
+                    <!-- News block line-->
+                    <tr align="center">
+                        <td bgcolor="#ff80ff" width="572px">
+                            <!-- News block container-->
+                            <table cellspacing="0" cellpadding="0" width="572px" align="center">
+                                <!-- Header news block-->
+                                <tr align="center">
+                                    <td width="572px" height="43px" bgcolor="#ffff00">Заголовок</td>
+                                </tr>
+                                <!-- /Header news block -->
+                                <!-- Main news block -->
+                                <tr align="center">
+                                    <td width="572px" bgcolor="#804000">Содержание</td>
+                                </tr>
+                                <!-- /Main news block -->
+                            </table>
+                            <!-- /News block container -->
+                        </td>
+                    </tr>
+                    <!-- /News block line-->
+                </table>
+                <!-- /News section-->
+            </td>
+            <!-- /Content -->
+            
+            <!-- Sidebar -->
+            <td align="center" colspan="2" bgcolor="#123456" height="450px">
+                <font color="#000" size="5">Сайдбар</font>
+            </td>
+            <!-- /Sidebar -->
+        </tr>
+        <!-- /Main -->
+        
+        <!-- Footer -->
+        <tr>
+            <td bgcolor="#a678aa" align="center" height="100px" colspan="5" width="960px">
+                <font color="#fff" size="5">Подвал</font>
+            </td>
+        </tr>
+        <!-- /Footer -->
+    </tbody>
+</table>
+<!-- End: Main container table -->
+</body>
+</html>

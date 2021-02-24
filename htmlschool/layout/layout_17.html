@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <title>Layout table</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+<!--
+Макет двухколоночный с единым контейнером, простой
+Ширина задается пикселями - 968
+В контейнере: шапка, меню, основная часть( content + sidebar ), подвал
+Меню состоит из 5 ячеек
+-->
+
+<!-- Begin: Main container table -->
+<table cellspacing="0" cellpadding="0" width="960px" align="center">
+    <tbody>
+        <!-- Header -->
+        <tr>
+            <td bgcolor="black" align="center" height="160px" colspan="5" width="960px">
+                <!-- Logo image -->
+                <img src="slide2.jpg" width="960px" height="360px" title="Шапка" />
+                <!-- /Logo image -->
+            </td>
+        </tr>
+        <!-- /Header -->
+        
+        <!-- Menu -->
+        <tr>
+            <td width="192px" align="center" height="50px" background="block_title.jpg">Меню1</td>
+            <td width="192px" bgcolor="#ff80ff" align="center" height="50px" background="block_title.jpg">Меню2</td>
+            <td width="192px" align="center" height="50px" background="block_title.jpg">Меню3</td>
+            <td width="192px" bgcolor="#ff80ff" align="center" height="50px" background="block_title.jpg">Меню4</td>
+            <td width="192px" align="center" height="50px" background="block_title.jpg">Меню5</td> 
+        </tr>
+        <!-- /Menu -->
+        
+        <!-- Main -->
+        <tr>            
+            <!-- Content -->
+            <td align="center" colspan="3" bgcolor="#cfcaea" height="450px">
+                <!-- News section-->
+                <table cellspacing="0" cellpadding="0" width="572px" align="center">
+                    <!-- News block line-->
+                    <tr align="center">
+                        <td bgcolor="#ff80ff" width="572px">
+                            <!-- News block container-->
+                            <table cellspacing="0" cellpadding="0" width="572px" align="center">
+                                <!-- Header news block-->
+                                <tr align="center">
+                                    <td width="572px" height="43px" bgcolor="#ffff00">Заголовок</td>
+                                </tr>
+                                <!-- /Header news block -->
+                                <!-- Main news block -->
+                                <tr align="center">
+                                    <td width="572px" bgcolor="#804000">
+                                        <!-- -->
+                                        <table cellspacing="0" cellpadding="0" width="572px" align="center">
+                                            <tr align="center">
+                                                <td width="110px" bgcolor="#808080">
+                                                    <!-- News image -->
+                                                    <img width="110px" height="110px" src="https://titanquest.org.ua/_nw/1/46790647.jpg" />
+                                                    <!-- /News image -->
+                                                </td>
+                                                <!-- News text -->
+                                                <td width="462px" bgcolor="#c0c0c0">Текст новости, который рассказывает нам о том, о сём и еще много о чем</td>
+                                                <!-- /News text -->
+                                            </tr>
+                                        </table>
+                                        <!-- /-->
+                                    </td>
+                                </tr>
+                                <!-- /Main news block -->
+                                <!-- Footer news block -->
+                                <tr align="center">
+                                    <td width="572px" bgcolor="#2b2bff">Подвал новости</td>
+                                </tr>
+                                <!-- /Footer news block -->
+                                <!-- Replies news block -->
+                                <tr align="center">
+                                    <td width="572px" bgcolor="#80ff80">
+                                        <!-- Comment1 -->
+                                        <table cellspacing="0" cellpadding="0" width="572px" align="center">
+                                            <tr align="center">
+                                                <!-- User Avatar -->
+                                                <td width="50px" height="50px" bgcolor="#80ff00" rowspan="2">
+                                                    <img width="50px" height="50px" src="https://titanquest.org.ua/avatar/27/978711.jpg" />
+                                                </td>
+                                                <!-- /User Avatar -->
+                                                <!-- User nick name -->
+                                                <td width="522px" bgcolor="#800080">UserName</td>
+                                                <!-- /User nick name -->
+                                            </tr>
+                                            <tr align="left">
+                                                <!-- User comment -->
+                                                <td width="522px" bgcolor="#ff80ff">Комментарий пользователя, который включает <i>наклонный текст</i>, <b>жирное</b> начертание, да и выравнивание у текста тут по <u>левому</u> краю.</td>
+                                                <!-- /User comment -->
+                                            </tr>
+                                        </table>
+                                        <!-- /Comment1 -->
+                                    </td>
+                                </tr>
+                                <!-- /Replies news block -->
+                            </table>
+                            <!-- /News block container -->
+                        </td>
+                    </tr>
+                    <!-- /News block line-->
+                </table>
+                <!-- /News section-->
+            </td>
+            <!-- /Content -->
+            
+            <!-- Sidebar -->
+            <td align="center" colspan="2" bgcolor="#123456" height="450px">
+                <!-- Sidebar blocks section -->
+                <table cellspacing="0" cellpadding="0" width="382px" align="center">
+                    <!-- block1 line -->
+                    <tr align="center">
+                        <td bgcolor="#ff37ff" width="382px">
+                            <!-- block1 container-->
+                            <table cellspacing="0" cellpadding="0" width="382px" align="center">
+                                <!-- Header block -->
+                                <tr align="center">
+                                    <td width="382px" height="43px" bgcolor="#ff8000">Заголовок</td>
+                                </tr>
+                                <!-- /Header block -->
+                                <!-- Main block -->
+                                <tr align="center">
+                                    <td width="382px" bgcolor="#8df574">Содержание блока</td>
+                                </tr>
+                                <!-- /Main block -->
+                            </table>
+                            <!-- /block1 container -->
+                        </td>
+                    </tr>
+                    <!-- /block1 line-->
+                </table>
+                <!-- /Sidebar blocks section -->
+            </td>
+            <!-- /Sidebar -->
+        </tr>
+        <!-- /Main -->
+        
+        <!-- Footer -->
+        <tr>
+            <td bgcolor="#a678aa" align="center" height="100px" colspan="5" width="960px">
+                <font color="#fff" size="5">Подвал</font>
+            </td>
+        </tr>
+        <!-- /Footer -->
+    </tbody>
+</table>
+<!-- End: Main container table -->
+</body>
+</html>

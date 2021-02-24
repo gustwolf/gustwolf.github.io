@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <title>Layout table</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+<!--
+Для каждой части отдельный контейнер
+3х колоночный макет
+Меню - 5 ячеек
+-->
+
+<!-- Header -->
+<table cellspacing="0" cellpadding="0" width="960px" align="center">
+    <tbody>
+        <tr>
+            <td bgcolor="black" align="center" height="160px" width="960px">
+                <!-- Logo image -->
+                <img src="slide2.jpg" width="960px" height="360px" title="Шапка" />
+                <!-- /Logo image -->
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- /Header -->
+
+<!-- Menu -->
+<table cellspacing="0" cellpadding="0" width="960px" align="center">
+    <tbody>
+        <tr>
+            <td width="192px" align="center" height="50px" background="block_title.jpg">Меню1</td>
+            <td width="192px" bgcolor="#ff80ff" align="center" height="50px" background="block_title.jpg">Меню2</td>
+            <td width="192px" align="center" height="50px" background="block_title.jpg">Меню3</td>
+            <td width="192px" bgcolor="#ff80ff" align="center" height="50px" background="block_title.jpg">Меню4</td>
+            <td width="192px" align="center" height="50px" background="block_title.jpg">Меню5</td>
+        </tr>
+    </tbody>
+</table>
+<!-- /Menu -->
+
+<!-- Main -->
+<table cellspacing="0" cellpadding="0" width="960px" align="center">
+    <tbody>
+        <tr>
+            <!-- Left block -->
+            <td align="center" width="100px" bgcolor="#123456" height="450px">
+                <!-- Left blocks section -->
+                <table cellspacing="0" cellpadding="0" width="100px" align="center">
+                    <!-- block1 line -->
+                    <tr align="center">
+                        <td bgcolor="#ff37ff" width="100px">
+                            <!-- block1 container-->
+                            <table cellspacing="0" cellpadding="0" width="100px" align="center">
+                                <!-- Header block -->
+                                <tr align="center">
+                                    <td width="100px" height="43px" bgcolor="#ff8000">Заголовок</td>
+                                </tr>
+                                <!-- /Header block -->
+                                <!-- Main block -->
+                                <tr align="center">
+                                    <td width="100px" bgcolor="#8df574">Содержание левого блока</td>
+                                </tr>
+                                <!-- /Main block -->
+                            </table>
+                            <!-- /block1 container -->
+                        </td>
+                    </tr>
+                    <!-- /block1 line-->
+                </table>
+                <!-- /Left blocks section -->
+            </td>
+            <!-- /Left block -->
+            
+            <!-- Content -->
+            <td align="center" width="760px" bgcolor="#cfcaea" height="450px">
+                <!-- News section-->
+                <table cellspacing="0" cellpadding="0" width="758px" align="center">
+                    <!-- News block line-->
+                    <tr align="center">
+                        <td bgcolor="#ff80ff" width="758px">
+                            <!-- News block container-->
+                            <table cellspacing="0" cellpadding="0" width="572px" align="center">
+                                <!-- Header news block-->
+                                <tr align="center">
+                                    <td width="758px" height="43px" bgcolor="#ffff00">Заголовок</td>
+                                </tr>
+                                <!-- /Header news block -->
+                                <!-- Main news block -->
+                                <tr align="center">
+                                    <td width="758px" bgcolor="#804000">Содержание</td>
+                                </tr>
+                                <!-- /Main news block -->
+                            </table>
+                            <!-- /News block container -->
+                        </td>
+                    </tr>
+                    <!-- /News block line-->
+                </table>
+                <!-- /News section-->
+            </td>
+            <!-- /Content -->
+            
+            <!-- Right block -->
+            <td align="center" width="100px" bgcolor="#123456" height="450px">
+                <!-- Right blocks section -->
+                <table cellspacing="0" cellpadding="0" width="100px" align="center">
+                    <!-- block1 line -->
+                    <tr align="center">
+                        <td bgcolor="#ff37ff" width="100px">
+                            <!-- block1 container-->
+                            <table cellspacing="0" cellpadding="0" width="100px" align="center">
+                                <!-- Header block -->
+                                <tr align="center">
+                                    <td width="100px" height="43px" bgcolor="#ff8000">Заголовок</td>
+                                </tr>
+                                <!-- /Header block -->
+                                <!-- Main block -->
+                                <tr align="center">
+                                    <td width="100px" bgcolor="#8df574">Содержание правого блока</td>
+                                </tr>
+                                <!-- /Main block -->
+                            </table>
+                            <!-- /block1 container -->
+                        </td>
+                    </tr>
+                    <!-- /block1 line-->
+                </table>
+                <!-- /Right blocks section -->
+            </td>
+            <!-- /Right block -->
+        </tr>
+    </tbody>
+</table>
+<!-- /Main -->
+
+<!-- Footer -->
+<table cellspacing="0" cellpadding="0" width="960px" align="center">
+    <tbody>
+        <tr>
+            <td bgcolor="#a678aa" align="center" height="100px" width="960px">
+                <font color="#fff" size="5">Подвал</font>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- /Footer -->
+
+</body>
+</html>
