@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Комбинирование наложений</title>
+</head>
+
+<body>
+
+<h1>Комбинирование наложений!</h1>
+
+<table border="1" align="center">
+  <tr>
+    <td>
+      <canvas id="source-over" width="120" height="110"></canvas><br/><l>source-over</l>
+    </td>
+    <td>
+        <canvas id="source-in" width="120" height="110"></canvas><br/><l>source-in</l>
+    </td>
+    <td>
+        <canvas id="source-out" width="120" height="110"></canvas><br/><l>source-out</l>
+    </td>
+    <td>
+        <canvas id="source-atop" width="120" height="110"></canvas><br/><l>source-atop</l>
+    </td>
+  </tr>
+  <tr>
+    <td>
+        <canvas id="destination-over" width="120" height="110"></canvas><br/><l>destination-over</l>
+    </td>
+    <td>
+        <canvas id="destination-in" width="120" height="110"></canvas><br/><l>destination-in</l>
+    </td>
+    <td>
+        <canvas id="destination-out" width="120" height="110"></canvas><br/><l>destination-out</l>
+    </td>
+    <td>
+        <canvas id="destination-atop" width="120" height="110"></canvas><br/><l>destination-atop</l>
+    </td>
+  </tr>
+  <tr>
+      <td>
+        <canvas id="lighter" width="120" height="110"></canvas><br/><l>lighter</l>
+      </td>
+      <td>
+        <canvas id="copy" width="120" height="110"></canvas><br/><l>copy</l>
+      </td>
+      <td>
+        <canvas id="xor" width="120" height="110"></canvas><br/><l>xor</l>
+      </td>
+    </tr>
+</table>
+
+<script>
+    function drawShapes(type)
+    {
+        canvas = document.getElementById(type);
+        context = canvas.getContext("2d");
+        var squareOffset = 15;
+        var squareSide = 70;
+        var circleOffset = 73;
+        var circleRadius = 35;
+
+        context.fillStyle = "blue";
+        context.fillRect(squareOffset, squareOffset, squareSide, squareSide);
+
+        context.globalCompositeOperation = type;
+
+        context.fillStyle = "red";
+        context.beginPath();
+        context.arc(circleOffset, circleOffset, circleRadius, 0, Math.PI * 2, true);
+        context.fill();
+    }
+    
+    drawShapes("source-over");
+    drawShapes("source-in");
+    drawShapes("source-out");
+    drawShapes("source-atop");
+    drawShapes("destination-over");
+    drawShapes("destination-in");
+    drawShapes("destination-out");
+    drawShapes("destination-atop");
+    drawShapes("lighter");
+    drawShapes("copy");
+    drawShapes("xor");
+</script>
+
+</body>
+</html>

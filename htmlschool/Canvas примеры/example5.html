@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Дольки</title>
+</head>
+
+<body>
+
+<p>Дольки</p>
+<canvas id='arc_demo'>Дольки</canvas>
+
+<script>
+  var canvas = document.getElementById("arc_demo");
+  var context = canvas.getContext('2d');
+  canvas.height = 200;
+  canvas.width = 500;
+  
+  function drawArc(xPos, yPos, radius, startAngle, endAngle, anticlockwise, lineColor, fillColor)
+  {
+    var startAngle = startAngle * (Math.PI/180);
+    var endAngle = endAngle * (Math.PI/180);
+    var radius = radius;
+    context.strokeStyle = lineColor;
+    context.fillStyle = fillColor;
+    context.lineWidth = 8;
+    context.beginPath();
+    context.arc(xPos, yPos, radius, startAngle, endAngle, anticlockwise);
+    context.fill();
+    context.stroke();
+  }
+  
+  drawArc(50, 15, 40, 0, 180, false, "aqua", "yellow");
+  drawArc(150, 15, 50, 350, 170, false, "green", "pink");
+  drawArc(270, 70, 60, 0, 100, true, "red", "white");
+  drawArc(400, 60, 50, 350, 20, true, "blue", "purple");
+</script>
+
+</body>
+</html>

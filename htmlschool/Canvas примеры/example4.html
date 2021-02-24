@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Много кругов</title>
+</head>
+
+<body>
+
+<h1>Много кругов</h1>
+<canvas id='random_circle'>круги в случайном порядке</canvas>
+
+<script>
+  var canvas = document.getElementById("random_circle");
+  var context = canvas.getContext('2d');
+  canvas.height = 400;
+  canvas.width = 400;
+  
+  var numCircles = 500;
+  var maxRadius = 20;
+  var minRadius = 3;
+  var colors =
+      ["aqua", "black", "blue", "fuchsia", "green", "cyan", "lime", "maroon",
+      "navy", "olive", "purple", "red", "silver", "teal", "yellow", "azure",
+      "gold", "bisque", "pink", "orange"];
+  var numColors = colors.length;
+  
+  // в цикле создаём круги
+  for(var n = 0; n < numCircles; n++)
+  {
+    // в случайном порядке установим характеристики
+    var xPos = Math.random() * canvas.width;
+    var yPos = Math.random() * canvas.height;
+    var radius = minRadius + (Math.random() * (maxRadius-minRadius));
+    var colorIndex = Math.random() * (numColors - 1);
+    colorIndex = Math.round(colorIndex);
+    var color = colors[colorIndex];
+    drawCircle(context, xPos, yPos, radius, color);
+  }
+  
+  // функция для рисования круга
+  function drawCircle(context, xPos, yPos, radius, color)
+  {
+    var startAngle = (Math.PI / 180) * 0;
+    var endAngle = (Math.PI / 180) * 360;
+    context.shadowColor = "gray";
+    context.shadowOffsetX = 1;
+    context.shadowOffsetY = 1;
+    context.shadowBlur = 5;
+    context.beginPath();
+    context.arc(xPos, yPos, radius, startAngle, endAngle, false);
+    context.fillStyle = color;
+    context.fill();
+  }
+</script>
+
+</body>
+</html>
