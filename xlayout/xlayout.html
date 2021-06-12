@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+
+<html lang="ru" prefix="og: https://ogp.me/ns">
+<head itemscope itemtype="http://schema.org/WPHeader">
+    <title itemprop="headline">Эскиз макета</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+    
+    <!--<link rel="shortcut icon" href="favicon.ico">-->
+    <link rel="stylesheet" href="xstyle.css">
+        
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,300&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+
+<div id="page">
+    
+    <input type="checkbox" id="nav-toggle" hidden>
+        <!-- 
+    Маска (затемнение) основного контента при включенной панели
+    по-умолчанию данная фишка не используется, если оно вам надо,
+		просто расккоментируйте div-контейнер ниже -->
+    <div class="mask-content"></div>
+    <!-- 
+    Выдвижную панель размещаете ниже
+    флажка (checkbox), но не обязательно 
+    непосредственно после него, например
+    можно и в конце страницы
+    -->
+    <nav class="nav">
+        <!-- 
+    Метка с именем `id` чекбокса в `for` атрибуте
+    Символ Unicode 'TRIGRAM FOR HEAVEN' (U+2630)
+    Пустой атрибут `onclick` используем для исправления бага в iOS < 6.0
+    См: http://timpietrusky.com/advanced-checkbox-hack 
+    -->
+        <label for="nav-toggle" class="nav-toggle" onclick></label>
+        <!-- 
+    Здесь размещаете любую разметку,
+    если это меню, то скорее всего неупорядоченный список <ul>
+    -->
+        <h2 class="logo"> 
+            <a href="#">Наш сайт</a> 
+        </h2>
+        <ul>
+            <li><a href="#1">Один</a>
+            <li><a href="#2">Два</a>
+            <li><a href="#3">Три</a>
+            <li><a href="#4">Четыре</a>
+            <li><a href="#5">Пять</a>
+            <li><a href="#6">Шесть</a>
+            <li><a href="#7">Семь</a> 
+        </ul>
+    </nav>
+    
+    
+    <div class="fixed_info_panel">
+        <div class="fixed_info_panel_wrap">
+            Текст верхней закрепленной полосы. Тут может быть какая-то информация.
+        </div>
+    </div>
+    
+    <header class="header_wrap" aria-label="Верхняя часть сайта" itemscope itemtype="https://schema.org/WPHeader">
+        
+        <div class="header_image_logo" itemscope itemtype="http://schema.org/ImageObject">
+            <div itemprop="https://www.site.ru/"></div>
+        </div>
+        
+        <nav class="horizontal_menu" itemscope itemtype="http://schema.org/SiteNavigationElement" aria-label="Тематические категории">
+            <div class="horizontal_menu_item"  itemprop="about" itemscope itemtype="http://schema.org/ItemList">
+                <div class="horizontal_menu_item-title active" itemprop="https://www.site.ru/">Главная</div>
+            </div>
+    
+            <div class="horizontal_menu_item" itemprop="about" itemscope itemtype="http://schema.org/ItemList">
+                <div class="horizontal_menu_item-title" itemprop="https://www.site.ru/">Форум</div>
+                <div class="submenu">
+                    <div class="submenu-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList">
+                        <div class="horizontal_menu_item-title" itemprop="https://www.site.ru/">Гильдии</div>
+                        <div class="submenu">
+                            <div class="submenu-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList">
+                                <div class="horizontal_menu_item-title" itemprop="https://www.site.ru/">Застава воинов</div>
+                            </div>
+                            <div class="submenu-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList">
+                                <div class="horizontal_menu_item-title" itemprop="https://www.site.ru/">Замок стражей</div>
+                            </div>
+                            <div class="submenu-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList">
+                                <div class="horizontal_menu_item-title" itemprop="https://www.site.ru/">Дворец магов</div>
+                            </div>
+                            <div class="submenu-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList">
+                                <div class="horizontal_menu_item-title" itemprop="https://www.site.ru/">Храм друидов</div>
+                            </div>
+                            <div class="submenu-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList">
+                                <div class="horizontal_menu_item-title" itemprop="https://www.site.ru/">Храм теней</div>
+                            </div>
+                            <div class="submenu-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList">
+                                <div class="horizontal_menu_item-title" itemprop="https://www.site.ru/">Застава охотников</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submenu-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList">
+                        <div class="horizontal_menu_item-title" itemprop="https://www.site.ru/">Общение</div>
+                    </div>
+                    <div class="submenu-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList">
+                        <div class="horizontal_menu_item-title" itemprop="https://www.site.ru/">Работа сайта</div>
+                    </div>
+                    <div class="submenu-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList">
+                        <div class="horizontal_menu_item-title" itemprop="https://www.site.ru/">Архив</div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="horizontal_menu_item">
+                <div class="horizontal_menu_item-title active" itemprop="https://www.site.ru/">Галерея</div>
+            </div>
+    
+            <div class="horizontal_menu_item">
+                <div class="horizontal_menu_item-title active" itemprop="https://www.site.ru/">База вещей</div>
+            </div>
+    
+            <div class="horizontal_menu_item">
+                <div class="horizontal_menu_item-title active" itemprop="https://www.site.ru/">Участники</div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="compound_wrap">
+        <aside class="sidebar" aria-label="Боковая информационная панель" itemscope itemtype="http://schema.org/WPSideBar">
+            <section class="online" aria-label="Онлайн">
+                <header class="online_header" itemprop="name">Онлайн</header>
+                <div class="online_holder"><span>1287</span></div>
+            </section>
+            
+            <section class="topics" aria-label="Новые темы">
+                <header class="topics_header" itemprop="name">Новые темы</header>
+                <div class="topics_holder">
+                    <div class="topic_item">
+                        <div class="topic_item-text">Тема1</div>
+                    </div>
+                    <div class="topic_item">
+                        <div class="topic_item-text">Тема1</div>
+                    </div>
+                    <div class="topic_item">
+                        <div class="topic_item-text">Тема1</div>
+                    </div>
+                    <div class="topic_item">
+                        <div class="topic_item-text">Тема1</div>
+                    </div>
+                    <div class="topic_item">
+                        <div class="topic_item-text">Тема1</div>
+                    </div>
+                    <div class="topic_item">
+                        <div class="topic_item-text">Тема1</div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="files" aria-label="Новые файлы">
+                <header class="files_header" itemprop="name">Новые файлы</header>
+                <div class="files_holder">
+                    <div class="file_item">
+                        <div class="file_item-text">Файл1</div>
+                    </div>
+                    <div class="file_item">
+                        <div class="file_item-text">Файл1</div>
+                    </div>
+                    <div class="file_item">
+                        <div class="file_item-text">Файл1</div>
+                    </div>
+                    <div class="file_item">
+                        <div class="file_item-text">Файл1</div>
+                    </div>
+                    <div class="file_item">
+                        <div class="file_item-text">Файл1</div>
+                    </div>
+                    <div class="file_item">
+                        <div class="file_item-text">Файл1</div>
+                    </div>
+                    <div class="file_item">
+                        <div class="file_item-text">Файл1</div>
+                    </div>
+                </div>
+            </section>
+        </aside>
+        
+        <main id="main-content">
+            <section class="cover" role="banner" aria-label="Картинка">
+                <div class="cover_wrap">
+                    <a href="#">
+                        <img class="image_cover" src="https://preview.colorlib.com/theme/andrea/images/ximage_2.jpg.pagespeed.ic.hn6JeducHP.jpg" alt="Preview" height="350">
+                    </a>
+                </div>
+            </section>
+            
+            <section class="search" role="search" aria-label="Поиск">
+                <div class="search_wrap" itemscope="" itemtype="http://schema.org/WebSite">
+                    <form itemscope="" itemtype="http://schema.org/SearchAction">
+                        <meta itemprop="target" content="/search/?q={query}">
+                        <input type="text" placeholder="Искать здесь..." itemprop="query">
+                        <button type="submit"></button>
+                    </form>
+                </div>
+            </section>
+            
+            <section class="news" aria-label="Новости">
+                <article class="news_item" itemid="https://my-site.ru/article23" itemscope itemtype="http://schema.org/Article" aria-label="Новость 1">
+                    
+                    <link itemprop="mainEntityOfPage" href="https://example.ru/" />
+                    <link itemprop="image" href="image">
+                    <meta itemprop="headline name" content="Название Статьи">
+                    <meta itemprop="description" content="Обязательное краткое описание статьи для Яндекса длиной от 50 до 150 символов.">
+                    <meta itemprop="author" content="Jason">
+                    <meta itemprop="about" content="Ragnarok" />
+                    <meta itemprop="about" content="PlayStation 4" />
+                    <meta itemprop="about" content="Xbox One" />
+                    <meta itemprop="datePublished" content="2019-08-09">
+                    <meta itemprop="dateModified" content="2021-04-22T11:48:26+00:00" />
+                    <meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://my-site.ru/article23" content=""/>
+                    <!--Яндексу этот блок не нужен. Гуглу нужен-->
+                    <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                        <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+                            <img itemprop="url image" src="images/logo.png" alt="Описание картинки" title="Описание картинки" style="display:none;"/>
+                        </div>
+                        <meta itemprop="name" content="название сайта">
+                        <meta itemprop="telephone" content="">
+                        <meta itemprop="address" content="Россия">
+                    </div>
+                    
+                    <header class="news_item_header" aria-label="Заголовок новости">
+                        <div class="news_item_header-title">
+                            <a href="https://google.com/" itemprop="headline name">Название новоcти</a>
+                        </div>
+                    </header>
+                    <div class="news_item_holder">
+                        <div class="news_item_holder-image" style="float:left;position: relative;">
+                            <a href="https://google.com/">
+                                <img src="https://titanquest.org.ua/_nw/1/31912021.jpg" alt="titan quest" height="147" width="190" itemprop="image" />
+                            </a>
+                            <div class="news_band">Новости сайта</div>
+                        </div>
+                        <div class="news_item_holder-text" itemprop="articleBody">На официальном сайте, разработчики сообщили, что сегодня состоится релиз дополнения Ragnarok для PlayStation 4 и Xbox One</div>
+                    </div>
+                    <footer class="news_item_footer" aria-label="Статистика новости">
+                        <div class="news_item_footer_info_wrap">
+                            <span>Просмотров: 3411</span>&nbsp;<b>|</b>&nbsp;
+                            <span>Комментариев: 2</span>&nbsp;<b>|</b>&nbsp;
+                            <span>Рейтинг: 4,938&nbsp;(1031 голос)</span>
+                        </div>
+                    </footer>
+                </article>
+                
+                <article class="news_item" itemid="23" itemscope itemtype="http://schema.org/Article" aria-label="Новость 2">
+                    <meta itemprop="about" content="Ragnarok" />
+                    <meta itemprop="about" content="PlayStation 4" />
+                    <meta itemprop="about" content="Xbox One" />
+                    <meta itemprop="dateModified" content="2021-04-22T11:48:26+00:00" />
+                    <meta content="" itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://my-site.ru/article23"/>
+                    <header class="news_item_header" aria-label="Заголовок новости">
+                        <div class="news_item_header-title">
+                            <a href="https://google.com/" itemprop="headline">Название новоcти</a>
+                        </div>
+                    </header>
+                    <div class="news_item_holder">
+                        <div class="news_item_holder-image" style="float:left;position: relative;">
+                            <a href="https://google.com/">
+                                <img src="https://titanquest.org.ua/_nw/1/31912021.jpg" alt="titan quest" height="147" width="190" itemprop="image" />
+                            </a>
+                            <div class="news_band">Новости сайта</div>
+                        </div>
+                        <div class="news_item_holder-text" itemprop="articleBody">На официальном сайте, разработчики сообщили, что сегодня состоится релиз дополнения Ragnarok для PlayStation 4 и Xbox One</div>
+                    </div>
+                    <footer class="news_item_footer" aria-label="Статистика новости">
+                        <div class="news_item_footer_info_wrap">
+                            <span>Просмотров: 3411</span>&nbsp;<b>|</b>&nbsp;
+                            <span>Комментариев: 2</span>&nbsp;<b>|</b>&nbsp;
+                            <span>Рейтинг: 4,938&nbsp;(1031 голос)</span>
+                        </div>
+                    </footer>
+                </article>
+            </section>
+        </main>
+    </div>
+    
+    <footer class="footer_wrap" itemscope itemtype="http://schema.org/WPFooter">
+        <section class="footer_navigation" aria-label="Подвал">
+            <nav class="footer_menu" aria-label="Разделы">
+                <div class="footer_menu_block">
+                    <div class="footer_menu_header">
+                        <div class="footer_menu_header-text">Справочная информация</div>
+                    </div>
+                    <div class="footer_item">
+                        <div class="footer_item-text">Пункт0</div>
+                    </div>
+                    <div class="footer_item">
+                        <div class="footer_item-text">Пункт1</div>
+                    </div>
+                    <div class="footer_item">
+                        <div class="footer_item-text">Пункт2</div>
+                    </div>
+                    <div class="footer_item">
+                        <div class="footer_item-text">Пункт3</div>
+                    </div>
+                    <div class="footer_item">
+                        <div class="footer_item-text">Пункт4</div>
+                    </div>
+                </div>
+            
+                <div class="footer_menu_block">
+                    <div class="footer_menu_header">
+                        <div class="footer_menu_header-text">Правовая информация</div>
+                    </div>
+                    <div class="footer_item">
+                        <div class="footer_item-text">Пункт0</div>
+                    </div>
+                    <div class="footer_item">
+                        <div class="footer_item-text">Пункт1</div>
+                    </div>
+                    <div class="footer_item">
+                        <div class="footer_item-text">Пункт2</div>
+                    </div>
+                    <div class="footer_item">
+                        <div class="footer_item-text">Пункт3</div>
+                    </div>
+                    <div class="footer_item">
+                        <div class="footer_item-text">Пункт4</div>
+                    </div>
+                </div>
+            
+                <div class="footer_menu_block">
+                    <div class="footer_menu_header">
+                        <div class="footer_menu_header-text">Сайт</div>
+                    </div>
+                    <div class="footer_item">
+                        <div class="footer_item-text">Пункт0</div>
+                    </div>
+                    <div class="footer_item">
+                        <div class="footer_item-text">Пункт1</div>
+                    </div>
+                    <div class="footer_item">
+                        <div class="footer_item-text">Пункт2</div>
+                    </div>
+                    <div class="footer_item">
+                        <div class="footer_item-text">Пункт3</div>
+                    </div>
+                    <div class="footer_item">
+                        <div class="footer_item-text">Пункт4</div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <meta itemprop="copyrightYear" content="2021">
+        <meta itemprop="copyrightHolder" content="Держатель_копирайта">
+        <section class="copyright" aria-label="Copyright">
+            Все права защищены <span itemprop="copyrightYear">2021</span>©
+        </section>
+    </footer>
+</div>
+</body>
+</html>
